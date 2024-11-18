@@ -21,6 +21,7 @@ body {
     "sidebar main";
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
+    font-family: "Roboto", sans-serif;
 }
 
 img, picture, video, canvas, svg {
