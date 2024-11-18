@@ -8,8 +8,19 @@
     margin: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     line-height: 1.5;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 img, picture, video, canvas, svg {
@@ -29,3 +40,17 @@ ul {
     list-style: none;
 }
 
+header {
+    background-color: #FFF;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: #1992D4;
+    grid-area: sidebar;
+}
+
+main {
+    background-color: #E2E8F0;
+    grid-area: main;
+}
