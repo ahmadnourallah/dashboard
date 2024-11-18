@@ -35,10 +35,12 @@ input, button, textarea, select {
   
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 header {
@@ -49,6 +51,34 @@ header {
 .sidebar {
     background-color: #1992D4;
     grid-area: sidebar;
+    color: #FFF;
+    padding: 2rem;
+    display: grid;
+}
+
+.sidebar img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.sidebar .logo .logo-icon {
+    width: 40px;
+}
+
+.sidebar ul {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: grid;
+    gap: 1rem;
+}
+
+.sidebar li, .sidebar .logo {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1rem;
+}
+
+.sidebar .nav-icon {
+    width: 25px;
 }
 
 main {
