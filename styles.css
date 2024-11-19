@@ -199,18 +199,51 @@ main {
     grid-template-areas:
     "projects announcements"
     "projects trending";
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem 1rem;
 }
 
-.projects {
+main .section-title {
+    margin-bottom: 1rem;
+}
+
+main .projects {
     grid-area: projects;
 }
 
-.announcements {
+main .projects .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+main .projects .cards-container .card {
+    background-color: #FFF;
+    border-radius: 10px;
+    border-left: 0.5rem solid var(--accent-color);
+    filter: drop-shadow(0px 0px 2px hsl(0deg 0% 0% / 0.38));
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+}
+
+main .projects .cards-container .card .card-description {
+    color: #636363;
+    font-size: .9rem;
+}
+
+main .projects .cards-container .card .btn-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    place-content: end;
+    gap: 2rem;
+}
+
+main .announcements {
     grid-area: announcements;
 }
 
-.trending {
+main .trending {
     grid-area: trending;
 }
