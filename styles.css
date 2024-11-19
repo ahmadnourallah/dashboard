@@ -203,6 +203,19 @@ main {
     padding: 2rem 1rem;
 }
 
+main .card {
+    background-color: #FFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 2px hsl(0deg 0% 0% / 0.38));
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+}
+
+main .card .card-description {
+    color: #636363;
+}
+
 main .section-title {
     margin-bottom: 1rem;
 }
@@ -218,17 +231,10 @@ main .projects .cards-container {
 }
 
 main .projects .cards-container .card {
-    background-color: #FFF;
-    border-radius: 10px;
     border-left: 0.5rem solid var(--accent-color);
-    filter: drop-shadow(0px 0px 2px hsl(0deg 0% 0% / 0.38));
-    padding: 2rem 1rem;
-    display: grid;
-    grid-template-rows: max-content max-content 1fr;
 }
 
 main .projects .cards-container .card .card-description {
-    color: #636363;
     font-size: .9rem;
 }
 
@@ -242,6 +248,24 @@ main .projects .cards-container .card .btn-container {
 
 main .announcements {
     grid-area: announcements;
+}
+
+main .announcements .card {
+    padding: 2rem;
+    gap: 1rem;
+}
+
+main .announcements .card .card-item:not(:last-child) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+main .announcements .card .card-title {
+    font-size: .9rem;
+}
+
+main .announcements .card .card-description {
+    font-size: .8rem;
 }
 
 main .trending {
