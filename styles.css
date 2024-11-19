@@ -53,8 +53,16 @@ ul {
     padding-inline-start: 0;
 }
 
-.svg-icon {
+.svg-icon-sm {
     width: 25px;
+}
+
+.svg-icon-md {
+    width: 50px;
+}
+
+.svg-icon-lg {
+    width: 80px;
 }
 
 header {
@@ -107,7 +115,6 @@ header .top .account {
 }
 
 header .top .account .user-avatar {
-    width: 50px;
     background-color: var(--accent-color);
     padding: 5px;
     border-radius: 50%;
@@ -135,7 +142,6 @@ header .bottom .left .user-name {
 }
 
 header .bottom .left .user-avatar {
-    width: 80px;
     background-color: var(--accent-color);
     padding: 8px;
     border-radius: 50%;
@@ -168,10 +174,6 @@ header .bottom .right button {
 
 .sidebar img {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-}
-
-.sidebar .logo .logo-icon {
-    width: 40px;
 }
 
 .sidebar ul {
