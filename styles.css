@@ -195,10 +195,6 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "projects announcements"
-    "projects trending";
     gap: 2rem;
     padding: 2rem 1rem;
 }
@@ -218,10 +214,6 @@ main .card .card-description {
 
 main .section-title {
     margin-bottom: 1rem;
-}
-
-main .projects {
-    grid-area: projects;
 }
 
 main .projects .cards-container {
@@ -247,7 +239,7 @@ main .projects .cards-container .card .btn-container {
 }
 
 main .announcements {
-    grid-area: announcements;
+    margin-bottom: 1rem;
 }
 
 main .announcements .card {
@@ -266,8 +258,4 @@ main .announcements .card .card-title {
 
 main .announcements .card .card-description {
     font-size: .8rem;
-}
-
-main .trending {
-    grid-area: trending;
 }
