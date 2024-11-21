@@ -259,3 +259,20 @@ main .announcements .card .card-title {
 main .announcements .card .card-description {
     font-size: .8rem;
 }
+
+main .trending .card > .card-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+main .trending .card .card-item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: .5rem;
+    align-items: center;
+}
+
+main .trending .card .card-item img {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
