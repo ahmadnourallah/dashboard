@@ -242,26 +242,22 @@ main .announcements {
     margin-bottom: 1rem;
 }
 
-main .announcements .card {
-    padding: 2rem;
-    gap: 1rem;
-}
-
 main .announcements .card .card-item:not(:last-child) {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--grey-color);
 }
 
-main .announcements .card .card-title {
+main .right .card {
+    padding: 2rem;
+    gap: 1rem;
+}
+
+main .right .card .card-title {
     font-size: .9rem;
 }
 
-main .announcements .card .card-description {
+main .right .card .card-description {
     font-size: .8rem;
-}
-
-main .trending .card > .card-item:not(:last-child) {
-    margin-bottom: 1rem;
 }
 
 main .trending .card .card-item {
