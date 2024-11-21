@@ -57,12 +57,21 @@ ul {
     width: 25px;
 }
 
-.svg-icon-md {
+.svg-icon-md-unrounded, .svg-icon-md {
     width: 50px;
+}
+
+.svg-icon-md {
+    background-color: var(--accent-color);
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .svg-icon-lg {
     width: 80px;
+    background-color: var(--accent-color);
+    padding: 8px;
+    border-radius: 50%;
 }
 
 header {
@@ -114,12 +123,6 @@ header .top .account {
     align-items: center;
 }
 
-header .top .account .user-avatar {
-    background-color: var(--accent-color);
-    padding: 5px;
-    border-radius: 50%;
-}
-
 header .bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -139,12 +142,6 @@ header .bottom .left .welcome-message {
 
 header .bottom .left .user-name {
     font-size: 1.4rem;
-}
-
-header .bottom .left .user-avatar {
-    background-color: var(--accent-color);
-    padding: 8px;
-    border-radius: 50%;
 }
 
 header .bottom .right {
@@ -265,10 +262,4 @@ main .trending .card .card-item {
     grid-template-columns: min-content 1fr;
     gap: .5rem;
     align-items: center;
-}
-
-main .trending .card .card-item img {
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
 }
